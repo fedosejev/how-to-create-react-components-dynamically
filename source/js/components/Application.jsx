@@ -15,7 +15,7 @@ let Application = React.createClass({
     return (
       <div className="container">
         <div className="row">
-          <div className="col-sm-12">
+          <div className="col-sm-12 text-center">
             
             {this.createImages(data.images)}
           

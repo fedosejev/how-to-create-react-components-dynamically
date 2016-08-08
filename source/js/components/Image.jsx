@@ -1,7 +1,7 @@
 import React from 'react';
 
 let Image = function statelessFunctionComponentClass(props) {
-  let source = '/images/' + props.source;
+  let source = './images/' + props.source;
   
   let style = {
     width: '200px',

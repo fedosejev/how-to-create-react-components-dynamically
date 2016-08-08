@@ -37,12 +37,20 @@ gulp.task('build-html-for-production', function () {
         .pipe(gulp.dest('./build'));
 });
 
+gulp.task('copy-images-to-build', function () {
+  return gulp
+        .src('./source/images/*')
+        .pipe(gulp.dest('./build/images'));
+});
+
 gulp.task('watch', function () {
   gulp.watch('./source/js/**/*.{jsx,js}', ['build-js-for-development']);
   gulp.watch('./source/**/*.html', ['build-html-for-development']);
 });
 
-gulp.task('build-for-development', ['build-js-for-development', 'build-html-for-development']);
-gulp.task('build-for-production', ['build-js-for-production', 'build-html-for-production']);
+gulp.task('build-for-development', ['build-js-for-development', 'build-html-for-development', 'copy-images-to-build']);
+gulp.task('build-for-production', ['build-js-for-production', 'build-html-for-production', 'copy-images-to-build']);
 
-gulp.task('default', ['build-js-for-development', 'build-html-for-development', 'watch']);
+gulp.task('build', ['build-for-development']);
+
+gulp.task('default', ['watch']);

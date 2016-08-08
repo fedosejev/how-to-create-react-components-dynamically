@@ -5,7 +5,7 @@ let Image = function statelessFunctionComponentClass(props) {
   
   let style = {
     width: '200px',
-    margin: '5px'
+    margin: '10px 5px 0px 5px'
   };
 
   return (

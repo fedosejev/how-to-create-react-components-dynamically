@@ -1,7 +1,11 @@
+**THIS REPOSITORY IS DEPRECATED.** Please go to: https://github.com/fedosejev/how-to-create-components-dynamically-in-react-16
+
+---
+
 # Example of how to create React.js components dynamically
 
-+ Tutorial: http://react.tips/how-to-create-reactjs-components-dynamically/
-+ See it in action: https://fedosejev.github.io/how-to-create-react-components-dynamically/
+- Tutorial: http://react.tips/how-to-create-reactjs-components-dynamically/
+- See it in action: https://fedosejev.github.io/how-to-create-react-components-dynamically/
 
 ## Install
 
